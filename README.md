@@ -5,25 +5,25 @@ It's very easy to let days blend without having any memorable moments. This app 
 # Initial prompts and features
 Users will be asked questions similar to these examples
 
--rate ur day 1-5
+-rate your day 1-5
   
--how was your mood
+-how was your mood today?
  
--what did you accomplish
+-what did you accomplish?
 
--what went well today
+-what went well today?
 
--what could u improve on
+-what could you improve on?
 
--what was the highlight of your day
+-what was the highlight of your day?
 
--what challenged you today
+-what challenged you today?
 
--what can you do better tmrw
+-what can you do better tomorrow?
 
--did u do your homework
+-did you complete your work today?
 
--give a word, to sum up ur day
+-give a word, to sum up your day
 
 
 ### Author
