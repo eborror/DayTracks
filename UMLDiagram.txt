@@ -1,0 +1,35 @@
+---
+title: DayTracks
+---
+classDiagram
+    User --> Questions : answers
+    User --> Journal : writes to
+    Journal --> JournalEntry : contains
+    Journal --> fileHandler : saves via
+    class User {
+        +String userName
+        +String email
+        +answerQuestions() void
+        +writeJournal() void
+    }
+    class Questions {
+        +List<String> activeQuestions
+        +getQuestions() List<String>
+    }
+    class Journal {
+        +List<JournalEntry> entries
+        +addEntry(String content) void
+        +saveToFile() void
+        +loadEntries() List<JournalEntry>
+    }
+    class JournalEntry {
+        +String content
+        +Date date
+    }
+    class fileHandler {
+        +writeToJournal(String content) void
+        +writeToLog(String log) void
+        +readFromFile(String filename) String
+        +loadJournal() List<JournalEntry>
+        +deleteEntry(Date date) void
+    }
