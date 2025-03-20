@@ -5,16 +5,26 @@ It's very easy to let days blend without having any memorable moments. This app 
 #Initial prompts and features
 Users will be asked questions like 
 
-  -rate ur day 1-5
-	-how was your mood
-	-what did you accomplish
-	-what went well today
-	-what could u improve on
-	-what was the highlight of your day
-	-what challenged you today
-	-what can you do better tmrw
-	-did u do your homework
-	-give a word, to sum up ur day
+-rate ur day 1-5
+  
+-how was your mood
+ 
+-what did you accomplish
+
+-what went well today
+
+-what could u improve on
+
+-what was the highlight of your day
+
+-what challenged you today
+
+-what can you do better tmrw
+
+-did u do your homework
+
+-give a word, to sum up ur day
+
 ### Author
 Ethan Borror
 Team name: Team Team
