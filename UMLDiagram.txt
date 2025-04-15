@@ -1,35 +1,58 @@
----
-title: DayTracks
----
 classDiagram
-    User --> Questions : answers
-    User --> Journal : writes to
-    Journal --> JournalEntry : contains
-    Journal --> fileHandler : saves via
-    class User {
-        +String userName
-        +String email
-        +answerQuestions() void
-        +writeJournal() void
+    class DayTracksGUI {
+        + static Stage primaryStage
+        + static String boxStyle
+        + static String buttonStyle
+        + static String labelStyle
+        + static String mainStyle
+        + static String smallTitleStyle
+        + static String textBoxStyle
+        + static String titleStyle
+
+        + void start(Stage primaryStage)
+        + static void main(String[] args)
+        + static void showMainScene()
     }
-    class Questions {
-        +List<String> activeQuestions
-        +getQuestions() List<String>
+
+    class TodaysJournalScene{
+        + static File file
+        - final Sting DATE
+
+        + static void journalClass(String title)
+        - static void saveJournal(String input)
     }
-    class Journal {
-        +List<JournalEntry> entries
-        +addEntry(String content) void
-        +saveToFile() void
-        +loadEntries() List<JournalEntry>
+
+    class PrevJournalScene {
+        + static void prevJournals(String title)
+        - static String readPrevJournals(String searchDate)
     }
-    class JournalEntry {
-        +String content
-        +Date date
+
+    class AnsweringQuesScene {
+        + static File file
+        + static File q1File
+        + static File q2File
+        - final String BUTTON_STYLE
+        - final String BOX_STYLE
+        - final String TEXT_STYLE
+        - static String q1Answer
+        - static String q2Answer
+        - final static List<TextField> writtenAnswers
+
+        + static void questionsScene(String title)
+        - static VBox createRatingQuestion(String questionText, int questionNumber)
+        - static void saveResponsesToFile()
     }
-    class fileHandler {
-        +writeToJournal(String content) void
-        +writeToLog(String log) void
-        +readFromFile(String filename) String
-        +loadJournal() List<JournalEntry>
-        +deleteEntry(Date date) void
+
+    class PrevQuestionsScene {
+        + static void prevQuestionsScene(String title)
+        - static List<Integer> readResponseFile(String filename)
+        - static Region createColorSquare(int rating)
+        - static String readWrittenEntries(int entryNum)
     }
+
+    DayTracksGUI <..> AnsweringQuesScene
+    DayTracksGUI <..> PrevJournalScene
+    DayTracksGUI <..> PrevQuestionsScene
+    DayTracksGUI <..> TodaysJournalScene
+    PrevJournalScene ..> TodaysJournalScene
+    PrevQuestionsScene ..> AnsweringQuesScene
