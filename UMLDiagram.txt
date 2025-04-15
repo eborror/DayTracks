@@ -1,4 +1,7 @@
 classDiagram
+    class App {
+        + static void main(String[] args)
+    }
     class DayTracksGUI {
         + static Stage primaryStage
         + static String boxStyle
@@ -50,6 +53,7 @@ classDiagram
         - static String readWrittenEntries(int entryNum)
     }
 
+    DayTracksGUI ..> App
     DayTracksGUI <..> AnsweringQuesScene
     DayTracksGUI <..> PrevJournalScene
     DayTracksGUI <..> PrevQuestionsScene
