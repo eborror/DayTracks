@@ -9,19 +9,32 @@ This app also hopes to provide an outlet to let out any negative emotions built 
 Users can access a daily journal, view previous journal entries, answer 10 daily questions, and view previous answers to their daily questions.
 
 Users will be asked these questions and are encouraged to answer each day.
+
   -Rate your day!
+  
   -How was your mood today?
+  
   -What did you accomplish?
+  
   -What went well today
+  
   -What could you improve on?
+  
   -What was the highlight of your day?
+  
   -What challenged you today?
+  
   -What can you do better tomorrow?
+  
   -Did you complete your work today?
+  
   -Give a word to sum up your day.
+  
 
-### Running The Project
-
+### Running The Project & Troubleshooting
+After downloading and unzipping the *daytracks* folder, users can navigate into the file, locate the *daytracks.jar*, and run it using Java SE
+If the jar file does not run, then you may need to check your java. Ensure you have JDK 17 or above installed, and JavaFX SDK must be added to the classpath.
+If the jar file still does not run, then you may need to recompile the project. The java files are located at *daytracks\src\main\java\daytracks\code*
 
 ### Author
 Ethan Borror
