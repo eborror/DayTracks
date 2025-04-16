@@ -1,0 +1,48 @@
+DayTracks Implementation Manual
+
+Project Overview
+DayTracks is a JavaFX-based journaling application that allows users to:
+	-Rate their day and mood
+	-Answer daily written questions
+	-Write a daily journal
+	-Save and view previous entries
+
+Setup Instructions
+	-Install Java & JavaFX
+	-Compile & run (with App.java as main)
+
+Code Structure
+daytracks/
+│   ├── App.java         		  	# Main class, initializes the app
+│   ├── DayTracksGUI.java       	# Main scene, selects which scene to go to next
+│   ├── AnsweringQuesScene.java   	# Handles question answering UI and saving responses
+│   ├── PrevQuestionsScene.java  	# Displays past Q1/Q2 responses & journal entry lookup
+│   ├── TodaysJournalScene.java   	# Lets user write/edit today's journal
+│   ├── PrevJournalScene.java     	# View all past journal entries in full
+├── journal.txt                    # Stores daily journal entries
+├── writtenResponses.txt          	# Stores full Q&A entries
+├── q1Responses.txt               	# Stores day rating (1-5)
+├── q2Responses.txt               	# Stores mood rating (1-5)
+
+journal.txt Format
+=== Journal MM-DD-YYYY ===
+*User input*
+=== End ===
+
+q1Responses.txt & q2Responses.txt Format
+1
+2
+3
+4
+5
+
+writtenResponses.txt Format
+=== Entry # (MM-DD-YYYY) ===
+3 - What did you accomplish?
+Answer: *User input*
+...
+10 - Give a word to sum up your day.
+Answer: *User input*
+
+Colors
+#F5E9D5, #C1BCAC, #979B8D, #5C7457, #214E34
