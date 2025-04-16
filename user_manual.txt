@@ -1,0 +1,41 @@
+DayTracks User Manual
+
+Getting Started:
+	-Download and launch application
+	-Compile project if need be
+		-compile with App.java as main
+
+How to Use:
+
+Main menu has 2 categories
+  -Journal
+    -Start / Continue Journal
+    -View Previous Journals
+  -Daily Questions
+    -Answer Today's Questions
+    -View Previous Days
+
+Start / Continue Journal
+  Opens a text box for the user to journal about whatever they want.
+  press save to save entry and return to menu
+  press back to return to menu without saving
+
+View Previous Journals
+  Lets the user search through their previous journal entries
+  type in the first box the date of the journal being searched for
+  press search to search journal.txt for an entry on the given date
+  found entry will be displayed on the lower box
+
+Answer Today's Questions
+  Prompts the user with 10 questions to answer
+  first 2 questions are multiple choice
+  last 8 questions are free response
+  pressing save will record all answers in a new entry regardless if
+    every question is answered or another entry has been added today
+  pressing back will return to menu and clear any answers
+
+View Previous Days
+  shows charts of previous day's answers to question 1 & 2
+  also provides a box for users to search for previous entries similar
+    to the "View Previous Journals" scene
+  press back to return to menu
